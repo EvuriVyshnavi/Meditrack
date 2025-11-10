@@ -1,0 +1,220 @@
+/* Meditrack Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none !important;
+    box-shadow: none;
+}
+
+.logo:focus {
+    outline: none !important;
+}
+
+.start-button {
+    background-color: #000080; /* Navy Blue */
+    color: white;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0;
+}
+
+.start-button:hover {
+    background-color: #000066;
+}
+
+.start-button:focus {
+    outline: none !important;
+}
+
+.back-button {
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0;
+}
+
+.back-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #000080;
+    border-bottom: 2px solid #000080;
+    padding-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#days {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+#days label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+button {
+    background-color: #000080;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #000066;
+}
+
+.add-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 2em;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.add-button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border-left: 5px solid #000080;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.medication-icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+    animation: pulse 2s infinite;
+}
+
+.alarm-icon {
+    font-size: 1.5em;
+    color: #000080;
+    animation: shake 0.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
