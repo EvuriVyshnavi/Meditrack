@@ -172,10 +172,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Request notification permission on load
-    if ('Notification' in window) {
+// Request notification permission on load (optional, only when needed)
+function requestNotificationPermission() {
+    if ('Notification' in window && Notification.permission === 'default') {
         Notification.requestPermission();
     }
+}
+
+// Call this only when user interacts with the app, e.g., when adding a reminder
+// For now, we'll request permission when the page loads, but you can modify this
+// requestNotificationPermission();
 
     // Initial scheduling
     scheduleReminders();
