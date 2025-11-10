@@ -89,7 +89,6 @@ main {
     padding: 20px;
     background-color: white;
     border-radius: 8px;
-    border: 2px solid #000080;
 }
 
 section {
@@ -100,12 +99,7 @@ h2 {
     color: #000080;
     border-bottom: 2px solid #000080;
     padding-bottom: 10px;
-    background-color:#000080;
-    color: white;
-    padding: 10px;
-    margin: -10px -10px 20px -10px;
 }
-
 form {
     display: flex;
     flex-direction: column;
